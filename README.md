@@ -27,7 +27,7 @@ The Log Parser is a Python-based tool designed to analyze log files and generate
    ```bash
    python main.py
    ```
-3. The generated report will be saved in the `report` directory as `report.json`.
+3. The generated report will be saved in the `report` directory (automatically generated) as `report.json`.
 
 ## Tests
 Tests are still ongoing and not completed
