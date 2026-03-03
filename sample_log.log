@@ -1,0 +1,5 @@
+2025-03-01 10:15:23 | INFO | Application started
+2025-03-01 10:15:25 | WARNING | Slow response detected
+2025-03-01 10:15:30 | ERROR | Database connection failed
+2025-03-01 10:16:00 | INFO | Retrying connection
+2025-03-01 10:16:05 | ERROR | Retry failed
