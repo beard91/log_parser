@@ -1,31 +1,49 @@
-Simple log parser
+# Log Parser
 
-Insert in \log folder the log file with name "sample_log.log" with a format like below:
-    2025-03-01 10:15:23 | INFO | Application started
-    2025-03-01 10:15:25 | WARNING | Slow response detected
-    2025-03-01 10:15:30 | ERROR | Database connection failed
-    2025-03-01 10:16:00 | INFO | Retrying connection
-    2025-03-01 10:16:05 | ERROR | Retry failed
+## Description
+The Log Parser is a Python-based tool designed to analyze log files and generate a structured report in JSON format. It helps users extract meaningful insights from log data.
 
+## Features
+- Parse log files to extract entries.
+- Generate a detailed report in JSON format.
+- Easy-to-use and customizable.
 
-In \report folder (which is created authomatically if doesn't exist) the JSON output report with following information:
-    - number of entries (=lines/events)
-    - how many log levels are present for each level (INFO, WARNING, ERROR)
+## Prerequisites
+- Python 3.8 or higher
 
-Below the JSON output report format:
-    {
-        "total_entries": 5,
-        "levels": {
-            "INFO": 2,
-            "WARNING": 1,
-            "ERROR": 2
-        }
-    }
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/log_parser.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd log_parser
+   ```
 
+## Usage
+1. Place your log file in the `log` directory and name it `sample_log.log`.
+2. Run the script:
+   ```bash
+   python main.py
+   ```
+3. The generated report will be saved in the `report` directory as `report.json`.
 
+## Tests
+Tests are still ongoing and not completed
 
-Execute it with command : python -m main
-
-
-Tests in \tests folder are still ongoing and not completed
-    
+## Directory Structure
+```
+log_parser/
+├── main.py
+├── pyproject.toml
+├── README.md
+├── src/
+│   ├── log_analyzer/
+│   │   ├── models.py
+│   │   ├── parser.py
+│   │   └── reporter.py
+├── tests/
+└── log/
+    └── sample_log.log
+```
