@@ -1,8 +1,0 @@
-{
-    "total_entries": 5,
-    "levels": {
-        "INFO": 2,
-        "WARNING": 1,
-        "ERROR": 2
-    }
-}
