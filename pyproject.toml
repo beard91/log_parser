@@ -1,7 +1,19 @@
 [project]
 name = "log-parser"
 version = "0.1.0"
-description = "Add your description here"
+description = "A tool for parsing logs and generating reports."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pytz",  # For timezone handling
+    "pytest",  # For testing
+    "python-dateutil"  # For advanced datetime parsing
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
