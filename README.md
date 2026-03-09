@@ -14,7 +14,7 @@ The Log Parser is a Python-based tool designed to analyze log files and generate
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/log_parser.git
+   git clone https://github.com/beard91/log_parser.git
    ```
 2. Navigate to the project directory:
    ```bash
