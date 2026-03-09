@@ -1,2 +1,5 @@
 /__pycache__/*
 /report/*
+/tests/__pycache__/*
+/log_analyzer/__pycache__/*
+/vscode/*
